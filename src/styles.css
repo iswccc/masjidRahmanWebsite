@@ -6,9 +6,6 @@
 .white {
   color: aliceblue;
 }
-.body{
-  background-color: #dddddd;
-}
 .overlay {
   z-index: 9;
   margin: 30px;

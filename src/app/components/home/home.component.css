@@ -1,8 +1,11 @@
 .address{
-     margin-top: 100px;
+     margin-top: 150px;
+     margin-right: 20px;
      font: small-caption;
      font-size:medium;
      text-shadow:30cap;
+     position: fixed;
+     max-width: 282px;
 }
 
 .center{
