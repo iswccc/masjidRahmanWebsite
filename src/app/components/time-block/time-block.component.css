@@ -1,0 +1,40 @@
+.time-block {
+  border: 2px solid;
+  margin: 15px;
+  width: 240px;
+  height: 183px;
+  border-radius: 20px;
+  background-image: linear-gradient(rgb(74, 77, 185), rgb(118, 191, 132));
+  display: block;
+  float: left;
+}
+
+.waqt-name {
+  padding-top: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: Copperplate Gothic;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.time {
+  border-radius: 20px;
+  text-align: center;
+  margin: 35px;
+  margin-top: 25px;
+  font-size: 14.4px;
+}
+
+table,
+th,
+td {
+  background-image: linear-gradient(rgb(181, 211, 162), rgb(45, 133, 205));
+  padding: 8px;
+}
+th {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+}

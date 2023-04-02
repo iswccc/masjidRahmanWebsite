@@ -3,10 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { SharedComponent } from './components/shared/shared.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TimeBlockComponent } from './components/time-block/time-block.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SharedComponent,
+    HeaderComponent,
+    TimeBlockComponent,
   ],
   imports: [
     BrowserModule,
