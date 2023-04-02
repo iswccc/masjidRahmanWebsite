@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.center {
+  text-align: center;
+}
+
+.white {
+  color: aliceblue;
+}
+.body{
+  background-color: #dddddd;
+}
+.overlay {
+  z-index: 9;
+  margin: 30px;
+  background: #009938;
+}

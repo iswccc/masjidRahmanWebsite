@@ -1,22 +1,25 @@
-<div class="container-lg pt-5 mt-5 ms-5">
 
-     <div class="time-block" *ngFor="let prayer of prayerTimes">
-          <div class="display">
-               <div class="waqt-name">
-                    <p>{{prayer.name}}</p>
-               </div>
-               <div class="time">
-                    <table>
-                         <tr>
-                              <th>Adhan</th>
-                              <th>Iqama</th>
-                         </tr>
-                         <tr>
-                              <td>{{prayer.iqama}}</td>
-                              <td>{{prayer.adhan}}</td>
-                         </tr>
-                    </table>
+     <div class="container-lg pt-5 mt-5 ms-5 jump white">
+          <div class="jump">
+               <p class="pt">Prayer Time</p>
+               <div class="time-block" *ngFor="let prayer of prayerTimes">
+                    <div class="display">
+                         <div class="waqt-name">
+                              <p>{{prayer.name}}</p>
+                         </div>
+                         <div class="time">
+                              <table>
+                                   <tr>
+                                        <th>Adhan</th>
+                                        <th>Iqama</th>
+                                   </tr>
+                                   <tr>
+                                        <td>{{prayer.iqama}}</td>
+                                        <td>{{prayer.adhan}}</td>
+                                   </tr>
+                              </table>
+                         </div>
+                    </div>
                </div>
           </div>
      </div>
-</div>

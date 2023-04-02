@@ -1,0 +1,20 @@
+.program {
+  font-size: large;
+  background: rgb(212, 219, 226);
+  padding: 80px;
+  margin-top: 700px;
+text-align: center;
+  width: 100%;
+}
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.bar {
+  width: 100%;
+  padding: 50px;
+  background-image: repeating-linear-gradient(rgb(127, 159, 204), white);
+}

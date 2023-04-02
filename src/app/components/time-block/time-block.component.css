@@ -8,6 +8,9 @@
   display: block;
   float: left;
 }
+.container-lg :hover {
+  border: 0px;
+}
 
 .waqt-name {
   padding-top: 15px;
@@ -37,4 +40,11 @@ th {
 }
 td {
   border: 1px solid black;
+}
+
+.pt {
+  text-align: center;
+  font-size: 30px;
+  font-family: Copperplate Gothic;
+  color: black;
 }

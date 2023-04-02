@@ -1,0 +1,5 @@
+.bar {
+  width: 100%;
+  padding: 50px;
+  background-image: repeating-linear-gradient(white, rgb(127, 159, 204));
+}

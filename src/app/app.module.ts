@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SharedComponent } from './components/shared/shared.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TimeBlockComponent } from './components/time-block/time-block.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TimeBlockComponent } from './components/time-block/time-block.component
     SharedComponent,
     HeaderComponent,
     TimeBlockComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

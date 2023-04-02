@@ -24,18 +24,21 @@ export class TimeBlockComponent implements OnInit {
     },
     {
       name: 'MAGRIB',
-      adhan: '7:40 AM',
+      adhan: '07:40 AM',
       iqama: '08:00 AM',
     },
     {
       name: 'ISHA',
-      adhan: '9:40 AM',
+      adhan: '09:40 AM',
       iqama: '10:00 AM',
+    },
+    {
+      name: 'JUMUA',
+      adhan: '1:40 PM',
+      iqama: '2:00 PM',
     },
   ];
   constructor() {}
 
-  ngOnInit(): void { }
-
-
+  ngOnInit(): void {}
 }
