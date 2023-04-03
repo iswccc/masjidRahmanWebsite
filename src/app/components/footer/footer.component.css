@@ -18,8 +18,8 @@ footer {
   width: 100%;
   padding: 50px;
   background-image: repeating-linear-gradient(
-    rgb(255, 255, 255),
-    rgb(209, 212, 220)
+    rgb(209, 212, 220),
+    rgb(255, 255, 255)
   );
 }
 @media only screen and (max-width: 800px) {
@@ -31,10 +31,10 @@ footer {
   color: rgb(6, 15, 7);
 }
 
-.program table tr td{
+.program table tr td {
   padding: 20px;
 }
 
-.social tr td{
+.social tr td {
   padding: 10px;
 }
