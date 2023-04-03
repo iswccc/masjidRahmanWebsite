@@ -2,9 +2,10 @@
   font-size: large;
   background: rgb(212, 219, 226);
   padding: 80px;
-  margin-top: 700px;
-text-align: center;
+  margin-top: 500px;
+  text-align: left;
   width: 100%;
+  overflow: hidden;
 }
 footer {
   right: 0;
@@ -16,5 +17,24 @@ footer {
 .bar {
   width: 100%;
   padding: 50px;
-  background-image: repeating-linear-gradient(rgb(127, 159, 204), white);
+  background-image: repeating-linear-gradient(
+    rgb(255, 255, 255),
+    rgb(209, 212, 220)
+  );
+}
+@media only screen and (max-width: 800px) {
+  .program {
+    overflow: hidden;
+  }
+}
+.program table {
+  color: rgb(6, 15, 7);
+}
+
+.program table tr td{
+  padding: 20px;
+}
+
+.social tr td{
+  padding: 10px;
 }
