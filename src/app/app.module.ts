@@ -8,6 +8,10 @@ import { SharedComponent } from './components/shared/shared.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TimeBlockComponent } from './components/time-block/time-block.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProgramsComponent } from './components/programs/programs.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,12 +22,17 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     TimeBlockComponent,
     FooterComponent,
+    ProgramsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
