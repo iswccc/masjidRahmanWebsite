@@ -1,0 +1,97 @@
+<body class="navy-blue black">
+     <div class="text-center">
+          <div class="col col-10 shadow my-5 border mx-auto inner-border bg-l">
+               <h4 class="p-3 mt-5 shadow rounded-pill">Get In Touch With The Masjid</h4>
+               <div class="ml-5 row">
+                    <div class="col col-10 shadow mx-auto mt-3 rounded white">
+                         <div class="row">
+                              <!-- col-12 -->
+                              <div class="col-md-12 p-3">
+                                   <div class="panel">
+                                        <div class="panel-body">
+                                             <div class="panel panel-info">
+                                                  <div class="panel-body">
+                                                       <form class="col-md-6 offset-md-3" [formGroup]="feedbackForm"
+                                                            (ngSubmit)="handleFinalSubmit()">
+                                                            <div class="form-group">
+                                                                 <label for="staticEmail"
+                                                                      class="col-sm-2 col-form-label"></label>
+                                                                 <div class="col-sm-10">
+                                                                      <!-- step 4: Patchup the input elements with the ts equivalent  -->
+                                                                      <!-- Refer TS for Step 5 -->
+                                                                      <input type="text" class="form-control"
+                                                                           placeholder="Enter Name"
+                                                                           formControlName="name"
+                                                                           [ngClass]="{ 'is-invalid': feedbackForm.get('name')?.touched && feedbackForm.get('name')?.invalid }" />
+                                                                      <!-- Step 6: working on validation messages -->
+                                                                      <div class="invalid-feedback">
+                                                                           <div>Name is required</div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                 <label for="staticEmail"
+                                                                      class="col-sm-2 col-form-label"></label>
+                                                                 <div class="col-sm-10">
+                                                                      <input type="email" class="form-control"
+                                                                           placeholder="Enter Email"
+                                                                           formControlName="email"
+                                                                           [ngClass]="{ 'is-invalid': feedbackForm.get('email')?.touched && feedbackForm.get('email')?.invalid }" />
+                                                                      <div class="invalid-feedback">
+                                                                           <div
+                                                                                *ngIf="feedbackForm.get('email')?.errors?.['required']">
+                                                                                Email is
+                                                                                required</div>
+                                                                           <div
+                                                                                *ngIf="feedbackForm.get('email')?.errors?.['email']">
+                                                                                Email seems to
+                                                                                be not valid</div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                 <label for="contact_message"
+                                                                      class="col-sm-2 col-form-label"></label>
+                                                                 <div class="col-sm-10">
+                                                                      <textarea rows="5" id="contact_message"
+                                                                           placeholder="Type your message"
+                                                                           name="contact_message" class="form-control"
+                                                                           formControlName="message"
+                                                                           [ngClass]="{ 'is-invalid': feedbackForm.get('message')?.touched && feedbackForm.get('message')?.invalid }">
+                                                    </textarea>
+                                                                      <div class="invalid-feedback">
+                                                                           <div>Message is required</div>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+
+                                                            <div class="alert alert-success" *ngIf="isSaved">
+                                                                 Message Sent!
+                                                            </div>
+
+                                                            <div
+                                                                 class="form-group row justify-content-center align-self-center mr-5">
+                                                                 <div class="col-sm-6">
+                                                                      <!--TODO: disable the button if the form is invalid in angular-->
+                                                                      <br>
+                                                                      <button type="submit"
+                                                                           class="bg-success mr-1">Submit</button>
+                                                                      <button type="reset"
+                                                                           class="bg-danger">Reset</button>
+                                                                 </div>
+                                                            </div>
+                                                       </form>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <h4 class="p-5 ml-5 text-center">JazakAllahu Khairan for visiting us!!!
+               </h4>
+          </div>
+     </div>
+</body>

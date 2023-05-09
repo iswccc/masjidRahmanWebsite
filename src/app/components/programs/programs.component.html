@@ -1,0 +1,28 @@
+<div class="program">
+     <p style="font-size: 25px; padding-bottom: 20px;">
+          Upcoming Programs
+     </p>
+     <hr>
+     <ng-template [ngIf]="programs.length<=0" [ngIfElse]="logProgram">
+          <p style="color:red">No upcoming activities, stay tuned for
+               updates !!!</p>
+     </ng-template>
+     <ng-template #logProgram>
+          <table logProgram class="table table-hover table-striped table-bordered">
+               <thead>
+                    <tr>
+                         <th scope="col">Event</th>
+                         <th scope="col">Date</th>
+                         <th scope="col">Time</th>
+                    </tr>
+               </thead>
+               <tbody *ngFor="let event of programs">
+                    <tr>
+                         <td>{{event.name}}</td>
+                         <td>{{event.date}}</td>
+                         <td>{{event.time}}</td>
+                    </tr>
+               </tbody>
+          </table>
+     </ng-template>
+</div>
