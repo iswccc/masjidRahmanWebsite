@@ -1,6 +1,27 @@
 <div class="container p-4 mt-5 body">
-     <div class="container-lg pt-5">
-          <h1 class="pra mb-5">Richmond Prayer Time <i>(prayer times dynamically get updated)</i></h1>
+     <div class="container-lg pt-5 mt-5">
+          <div class="row mt-5">
+               <div class="col">
+                    <h6>{{masjid.title}}</h6>
+                    <h6>{{masjid.address}}, {{masjid.city}}, {{masjid.state}}, {{masjid.zip}}</h6>
+                    <h6>United States Of America</h6>
+               </div>
+               <div class="col">
+                    <H6>Today: {{todayDate | date:'fullDate' }} </H6>
+                    <h6>Hijri date: Shawwal 26, 1444 AH</h6>
+                    <h6>Time: {{todayDate | date:'fullTime' }}</h6>
+               </div>
+          </div>
+
+          <h5 class="mt-5">Announcement : {{masjid.announcement}}</h5>
+
      </div>
      <app-time-block></app-time-block>
+     <p class="pra center">Salah Time
+          <i>(times dynamically get updated)</i>
+     </p>
 </div>
+
+<!--
+<p>{{masjid.address}}, {{masjid.city}}, {{masjid.state}}, {{masjid.zip}}</p>
+<p>Announcement : {{masjid.announcement}}</p> -->
