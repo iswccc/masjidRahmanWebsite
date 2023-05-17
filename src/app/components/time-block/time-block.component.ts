@@ -48,7 +48,7 @@ export class TimeBlockComponent implements OnInit {
             iqama: this.masjid.isha_iqama_time,
           },
           {
-            name: 'JUMUA',
+            name: 'JUMMAH',
             adhan: this.masjid.jumma1_azan,
             iqama: this.masjid.jumma1_iqama,
           },

@@ -11,6 +11,7 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit {
   @Input() masjidInfo = {};
   masjid: any | undefined;
+  selected: any;
   sub!: Subscription;
   private apiUrl = 'https://api.masjidiapp.com/v2/masjids/3462';
   private apiKey = '123-test-key';

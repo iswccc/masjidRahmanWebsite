@@ -14,7 +14,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DonateComponent } from './components/donate/donate.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +34,7 @@ import { DonateComponent } from './components/donate/donate.component';
     HttpClientModule,
   ],
   providers: [],
+  // declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
