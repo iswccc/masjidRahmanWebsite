@@ -12,7 +12,7 @@ import { ProgramsComponent } from './components/programs/programs.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { DonateComponent } from './components/donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ProgramsComponent,
     ContactComponent,
+    DonateComponent,
   ],
   imports: [
     BrowserModule,

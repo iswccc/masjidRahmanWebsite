@@ -1,6 +1,20 @@
-<div class="container p-4 mt-5 body">
-     <div class="container-lg pt-5">
-          <h1 class="pra mb-5">Richmond Prayer Time <i>(prayer times dynamically get updated)</i></h1>
+<div class="container pt-5 mt-5">
+     <div class="container-lg pt-1 mt-5">
+          <div class="row mt-5 ">
+          </div>
      </div>
-     <app-time-block></app-time-block>
+     <div class="mt-5">
+          <H6>{{todayDate | date:'fullDate' }} </H6>
+          <h6>{{masjid.hijri_date}}, 1444 AH</h6>
+          <h6>{{todayDate | date:'fullTime' }}</h6>
+     </div>
+     <div class="center mt-5" *ngIf="masjid.announcement">
+          <h5 class="mt-5 bg-info p-4">Announcement : {{masjid.announcement}}</h5>
+     </div>
+     <div class="center">
+          <app-time-block></app-time-block>
+     </div>
+     <p class="pra center">Salah Time
+          <i>(times dynamically get updated)</i>
+     </p>
 </div>
