@@ -34,7 +34,6 @@ import { DonateComponent } from './components/donate/donate.component';
     HttpClientModule,
   ],
   providers: [],
-  // declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
