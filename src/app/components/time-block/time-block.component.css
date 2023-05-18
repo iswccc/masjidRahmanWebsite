@@ -1,24 +1,23 @@
 .time-block {
-  border: 2px solid;
+  border: 4px solid #9c8512;
   width: 240px;
   height: 183px;
   border-radius: 20px;
-  background-image: linear-gradient(rgb(74, 77, 185), rgb(118, 191, 132));
+  background-color: white;
   display: inline-block;
   align-content: center;
   margin-right: 80px;
   margin-bottom: 30px;
 }
 .container :hover {
-  border: 0px;
+  border: 1px;
 }
-.jump {
-  border: none;
+.jump:hover {
   margin: 0 auto;
 }
 .waqt-name {
   padding-top: 15px;
-  color: rgb(0, 0, 0);
+  color: #9c8512;
   font-size: 20px;
   font-family: Copperplate Gothic;
   text-align: center;
@@ -28,20 +27,20 @@
   border-radius: 20px;
   text-align: center;
   margin: 35px;
-  margin-top: 25px;
-  font-size: 14.4px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 table,
 th,
 td {
-  background-image: linear-gradient(rgb(181, 211, 162), rgb(45, 133, 205));
+  background-color: #9c8512;
   padding: 8px;
 }
 th {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 td {
-  border: 1px solid black;
+  border: 1px solid white;
 }
 .pt {
   text-align: center;
