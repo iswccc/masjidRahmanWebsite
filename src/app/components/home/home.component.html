@@ -3,13 +3,14 @@
           <div class="row mt-5 ">
           </div>
      </div>
-     <div class="mt-5">
+     <div class="center mt-5" *ngIf="masjid.announcement">
+          <h5 class="mt-5 bg-primary p-4 white">Announcement : {{masjid.announcement}}</h5>
+     </div>
+     <div class="mt-5 center">
+          <h1>Prayer Timing</h1>
           <H6>{{todayDate | date:'fullDate' }} </H6>
           <h6>{{masjid.hijri_date}}, 1444 AH</h6>
-          <h6>{{todayDate | date:'fullTime' }}</h6>
-     </div>
-     <div class="center mt-5" *ngIf="masjid.announcement">
-          <h5 class="mt-5 bg-info p-4">Announcement : {{masjid.announcement}}</h5>
+          <!-- <h6>{{todayDate | date:'fullTime' }}</h6> -->
      </div>
      <div class="center">
           <app-time-block></app-time-block>

@@ -9,9 +9,9 @@
   margin-right: 80px;
   margin-bottom: 30px;
 }
-.container :hover {
+/* .container :hover {
   border: 1px;
-}
+} */
 .jump:hover {
   margin: 0 auto;
 }
