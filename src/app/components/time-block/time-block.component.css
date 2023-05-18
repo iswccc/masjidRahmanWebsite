@@ -10,10 +10,9 @@
   margin-bottom: 30px;
 }
 .container :hover {
-  border: 0px;
+  border: 1px;
 }
-.jump {
-  border: none;
+.jump:hover {
   margin: 0 auto;
 }
 .waqt-name {
@@ -28,8 +27,8 @@
   border-radius: 20px;
   text-align: center;
   margin: 35px;
-  margin-top: 25px;
-  font-size: 14.4px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 table,
 th,
