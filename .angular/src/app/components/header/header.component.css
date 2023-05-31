@@ -1,0 +1,33 @@
+.bar {
+  width: 100%;
+  padding: 15px;
+  background-image: repeating-linear-gradient(
+    rgb(255, 255, 255),
+    rgb(209, 212, 220)
+  );
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 200px) {
+  .bar {
+    width: 100%;
+    height: 25%;
+  }
+}
+/* @media only screen and (max-width: 800px) {
+  .bar{
+   width: 100%;
+   height: 25%;
+  }
+} */
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 12px;
+  }
+}

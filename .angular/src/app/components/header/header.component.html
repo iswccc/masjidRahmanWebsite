@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top mb-5 bar">
+     <a class="navbar-brand nav-font mx-auto p-2" href="/home">
+          <img src="assets/icon.jpeg" alt="blank" style="width:80px;height:80px; border-radius: 10px;">
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto me-5">
+
+               <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <a class="nav-link nav-font" routerLink='/'>Home</a>
+               </li>
+               <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link nav-font" routerLink="/programs">Programs</a>
+               </li>
+               <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link nav-font" routerLink="/donate">Donate</a>
+               </li>
+               <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link nav-font" routerLink="/contact">Contact</a>
+               </li>
+          </ul>
+     </div>
+     <div class="justify-content-end me-5">
+          <h6></h6>
+          <h6>{{masjidInfo.title}}</h6>
+          <h6>{{masjidInfo.address}}, {{masjidInfo.city}}, {{masjidInfo.state}}, {{masjidInfo.zip}}</h6>
+          <h6>{{masjidInfo.country}}</h6>
+     </div>
+</nav>
