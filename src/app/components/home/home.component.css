@@ -27,6 +27,11 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-.bg-yellow{
+
+.blur {
+  backdrop-filter: blur(5px);
+}
+
+.bg-yellow {
   background-color: rgb(184, 189, 167);
 }

@@ -21,3 +21,6 @@
 .bg-yellow {
   background-color: #9c8512;
 }
+.blur {
+  backdrop-filter: blur(5px);
+}
