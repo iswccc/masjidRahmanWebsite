@@ -1,51 +1,53 @@
 <body>
-     <div class="container pt-5 mt-5">
-          <div class="container-lg pt-1 mt-5">
-               <div class="row mt-5 ">
+     <div class="blur">
+          <div class="container pt-5 mt-5 blur" id="home">
+               <div class="container-lg pt-1 mt-5">
+                    <div class="row mt-5 ">
+                    </div>
+               </div>
+               <div class="center mt-5" *ngIf="masjid.announcement">
+                    <h5 class="mt-5 bg-primary p-4 white">Announcement : {{masjid.announcement}}</h5>
+               </div>
+               <div class="mt-5 center white">
+                    <h1>Prayer Timing</h1>
+                    <H6>{{todayDate | date:'fullDate' }} </H6>
+                    <h6>{{masjid.hijri_date}}, 1444 AH</h6>
+                    <!-- <h6>{{todayDate | date:'fullTime' }}</h6> -->
+               </div>
+               <div class="center">
+                    <app-time-block></app-time-block>
+               </div>
+               <div class="center mt-5 mb-5">
+                    <p class="mt-5 bg-primary p-4 white">Salah Time<i>(times dynamically get updated)</i></p>
                </div>
           </div>
-          <div class="center mt-5" *ngIf="masjid.announcement">
-               <h5 class="mt-5 bg-primary p-4 white">Announcement : {{masjid.announcement}}</h5>
-          </div>
-          <div class="mt-5 center white">
-               <h1>Prayer Timing</h1>
-               <H6>{{todayDate | date:'fullDate' }} </H6>
-               <h6>{{masjid.hijri_date}}, 1444 AH</h6>
-               <!-- <h6>{{todayDate | date:'fullTime' }}</h6> -->
-          </div>
-          <div class="center">
-               <app-time-block></app-time-block>
-          </div>
-          <div class="center mt-5 mb-5">
-               <p class="mt-5 bg-primary p-4 white">Salah Time<i>(times dynamically get updated)</i></p>
-          </div>
-     </div>
 
-     <div class="program p-5 bg-yellow">
-          <p style="font-size: 25px; padding-bottom: 20px;">
-               Upcoming Programs
-          </p>
-          <ng-template [ngIf]="programs.length<=0" [ngIfElse]="logProgram">
-               <p style="color:red">No upcoming activities, stay tuned for
-                    updates !!!</p>
-          </ng-template>
-          <ng-template #logProgram>
-               <table logProgram class="table table-hover table-striped table-bordered">
-                    <thead>
-                         <tr>
-                              <th scope="col">Event</th>
-                              <th scope="col">Date</th>
-                              <th scope="col">Time</th>
-                         </tr>
-                    </thead>
-                    <tbody *ngFor="let event of programs">
-                         <tr>
-                              <td>{{event.name}}</td>
-                              <td>{{event.date}}</td>
-                              <td>{{event.time}}</td>
-                         </tr>
-                    </tbody>
-               </table>
-          </ng-template>
+          <div class="program container p-5 bg-yellow blur">
+               <p style="font-size: 25px; padding-bottom: 20px;">
+                    Upcoming Programs
+               </p>
+               <ng-template [ngIf]="programs.length<=0" [ngIfElse]="logProgram">
+                    <p style="color:red">No upcoming activities, stay tuned for
+                         updates !!!</p>
+               </ng-template>
+               <ng-template #logProgram>
+                    <table logProgram class="table table-hover table-striped table-bordered">
+                         <thead>
+                              <tr>
+                                   <th scope="col">Event</th>
+                                   <th scope="col">Date</th>
+                                   <th scope="col">Time</th>
+                              </tr>
+                         </thead>
+                         <tbody *ngFor="let event of programs">
+                              <tr>
+                                   <td>{{event.name}}</td>
+                                   <td>{{event.date}}</td>
+                                   <td>{{event.time}}</td>
+                              </tr>
+                         </tbody>
+                    </table>
+               </ng-template>
+          </div>
      </div>
 </body>
