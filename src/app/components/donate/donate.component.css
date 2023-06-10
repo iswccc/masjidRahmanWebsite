@@ -21,3 +21,15 @@ body {
   display: inline-block;
   position: relative;
 }
+
+.col-sq {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+
+
+button, input, optgroup, select, textarea {
+    color: white;
+    border-radius: 10px;
+}
