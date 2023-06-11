@@ -27,9 +27,24 @@ body {
   width: auto;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: white;
+  border-radius: 10px;
+}
 
+row.button {
+  /* width: 100rem; */
+  height: 10%;
+  padding: 100px;
+}
 
-button, input, optgroup, select, textarea {
-    color: white;
-    border-radius: 10px;
+.don-size {
+  padding: 10px;
+}
+.custom {
+  width: 50% !important;
 }
