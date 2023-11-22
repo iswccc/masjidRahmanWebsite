@@ -1,5 +1,8 @@
+import { EventsService } from './../../services/events.service';
 import { Component, OnInit } from '@angular/core';
 import { program } from './program';
+import { Subscription } from 'rxjs';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-programs',
@@ -7,24 +10,23 @@ import { program } from './program';
   styleUrls: ['./programs.component.css'],
 })
 export class ProgramsComponent implements OnInit {
-  programs: program[] = [
-    {
-      name: 'Family Night',
-      date: 'January 7th, 2023',
-      time: '4:00 PM',
-    },
-    {
-      name: 'Kids Night',
-      date: 'January 7th, 2023',
-      time: '4:00 PM',
-    },
-    {
-      name: 'Hena Night',
-      date: 'January 7th, 2023',
-      time: '4:00 PM',
-    },
-  ];
-  constructor() {}
+  sub!: Subscription;
+  private apiUrl = 'http://localhost:3000/api/v1/events/get';
+  //programs: program[] = [];
+  programs: any | undefined;
+  constructor(private eventsService: EventsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let headers = new HttpHeaders();
+    this.sub = this.eventsService.getEvents(this.apiUrl, headers).subscribe({
+      next: (data) => {
+        this.programs = data;
+        console.log(this.programs);
+      },
+      error: (err) => console.log(err),
+    });
+  }
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
 }
