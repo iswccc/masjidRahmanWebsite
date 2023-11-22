@@ -12,7 +12,7 @@ export class TimeBlockComponent implements OnInit {
   prayerTimes: any;
   masjid: any | undefined;
   sub!: Subscription;
-  private apiUrl = 'http://localhost:3000/api/data';
+  private apiUrl = 'http://localhost:3000/api/v1/masjid-data/get';
 
   constructor(private masjidService: MasjidService) {}
 
